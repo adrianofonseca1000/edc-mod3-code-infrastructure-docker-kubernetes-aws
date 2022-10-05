@@ -1,0 +1,11 @@
+FROM python:3.8-slim
+
+#RUN pip install pip==21.3.1
+
+RUN python3 -m pip install pandas
+
+#RUN python3 -m pip show pandas
+
+COPY run.py /run.py
+
+CMD python /run.py
